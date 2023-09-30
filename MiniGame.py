@@ -1,11 +1,14 @@
-palpite = 2 
+Palpite = 0
 numero = 2
 
-while palpite != numero:
-    print("Advinhe qual numero o numero correto? ")
-    palpite = int(input())
-
-
-#print("Parabens voce acertou")
-#print("Você errou")
-print(bool(3>8))
+while True:
+    print("Qual o numero correto?")
+    Palpite = int(input())
+    if Palpite == numero:
+        print("Parabens você acertou")
+        break
+    else:
+        print('Você errou') 
+else: 
+    print("Erro na aplicação")
+    print(bool(Palpite))
